@@ -6,7 +6,6 @@
 .container {
   text-align: center;
   display: grid;
-  grid-template-rows: repeat(4, auto);
   grid-template-columns: 1fr 4fr;
   gap: 4px;
 }
@@ -28,14 +27,14 @@
 }
 
 .header .logo {
-  justify-self: left;
+  justify-self: start;
 }
 
 .menu ul {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-items: right;
+  justify-items: end;
 }
 
 .menu ul,
@@ -63,6 +62,10 @@
   color: black;
   font-size: 16px;
   font-weight: normal;
+}
+
+.side-content,
+.photo {
   display: grid;
   place-items: center;
 }
